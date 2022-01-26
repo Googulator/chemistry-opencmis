@@ -26,7 +26,7 @@
     <parent>
         <groupId>org.apache.chemistry.opencmis</groupId>
         <artifactId>chemistry-opencmis</artifactId>
-        <version>1.1.0</version>
+        <version>1.1.0-strict</version>
         <relativePath>../../pom.xml</relativePath>
     </parent>
 
@@ -95,22 +95,22 @@
         <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>chemistry-opencmis-client-api</artifactId>
-            <version>${project.version}</version>
+            <version>1.1.0</version>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>chemistry-opencmis-commons-api</artifactId>
-            <version>${project.version}</version>
+            <version>1.1.0</version>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>chemistry-opencmis-commons-impl</artifactId>
-            <version>${project.version}</version>
+            <version>1.1.0</version>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>chemistry-opencmis-client-bindings</artifactId>
-            <version>${project.version}</version>
+            <version>1.1.0</version>
         </dependency>
         <dependency>
             <groupId>org.osgi</groupId>
@@ -134,13 +134,17 @@
             <artifactId>cxf-rt-ws-policy</artifactId>
             <version>${cxf.version}</version>
         </dependency>
-        <!-- Test -->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>${log4j.version}</version>
+        </dependency>
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-core</artifactId>
             <version>${log4j.version}</version>
-            <scope>test</scope>
         </dependency>
+        <!-- Test -->
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-slf4j-impl</artifactId>
