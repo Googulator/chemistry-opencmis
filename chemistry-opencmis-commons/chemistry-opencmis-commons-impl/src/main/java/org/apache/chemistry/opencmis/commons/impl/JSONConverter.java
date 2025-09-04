@@ -2133,7 +2133,7 @@ public final class JSONConverter {
 
                 convertExtension(jsonPropertyMap, property, PROPERTY_KEYS);
 
-                result.addProperty(property);
+                result.replaceProperty(property);
             }
         }
 
@@ -2300,7 +2300,7 @@ public final class JSONConverter {
                 property.setLocalName(null);
             }
 
-            result.addProperty(property);
+            result.replaceProperty(property);
         }
 
         if (extJson != null) {
