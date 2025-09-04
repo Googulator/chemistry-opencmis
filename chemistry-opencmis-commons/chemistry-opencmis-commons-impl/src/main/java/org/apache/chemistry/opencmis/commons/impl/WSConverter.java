@@ -1650,7 +1650,7 @@ public final class WSConverter {
         PropertiesImpl result = new PropertiesImpl();
 
         for (CmisProperty property : properties.getPropertyBooleanOrPropertyIdOrPropertyInteger()) {
-            result.addProperty(convert(property));
+            result.replaceProperty(convert(property));
         }
 
         // handle extensions
