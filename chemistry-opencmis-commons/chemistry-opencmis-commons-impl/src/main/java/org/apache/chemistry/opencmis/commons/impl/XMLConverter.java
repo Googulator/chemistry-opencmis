@@ -2249,42 +2249,42 @@ public final class XMLConverter {
         protected boolean read(XMLStreamReader parser, QName name, PropertiesImpl target) throws XMLStreamException {
             if (isCmisNamespace(name)) {
                 if (isTag(name, TAG_PROP_STRING)) {
-                    target.addProperty(PROPERTY_STRING_PARSER.walk(parser));
+                    target.replaceProperty(PROPERTY_STRING_PARSER.walk(parser));
                     return true;
                 }
 
                 if (isTag(name, TAG_PROP_ID)) {
-                    target.addProperty(PROPERTY_ID_PARSER.walk(parser));
+                    target.replaceProperty(PROPERTY_ID_PARSER.walk(parser));
                     return true;
                 }
 
                 if (isTag(name, TAG_PROP_BOOLEAN)) {
-                    target.addProperty(PROPERTY_BOOLEAN_PARSER.walk(parser));
+                    target.replaceProperty(PROPERTY_BOOLEAN_PARSER.walk(parser));
                     return true;
                 }
 
                 if (isTag(name, TAG_PROP_INTEGER)) {
-                    target.addProperty(PROPERTY_INTEGER_PARSER.walk(parser));
+                    target.replaceProperty(PROPERTY_INTEGER_PARSER.walk(parser));
                     return true;
                 }
 
                 if (isTag(name, TAG_PROP_DATETIME)) {
-                    target.addProperty(PROPERTY_DATETIME_PARSER.walk(parser));
+                    target.replaceProperty(PROPERTY_DATETIME_PARSER.walk(parser));
                     return true;
                 }
 
                 if (isTag(name, TAG_PROP_DECIMAL)) {
-                    target.addProperty(PROPERTY_DECIMAL_PARSER.walk(parser));
+                    target.replaceProperty(PROPERTY_DECIMAL_PARSER.walk(parser));
                     return true;
                 }
 
                 if (isTag(name, TAG_PROP_HTML)) {
-                    target.addProperty(PROPERTY_HTML_PARSER.walk(parser));
+                    target.replaceProperty(PROPERTY_HTML_PARSER.walk(parser));
                     return true;
                 }
 
                 if (isTag(name, TAG_PROP_URI)) {
-                    target.addProperty(PROPERTY_URI_PARSER.walk(parser));
+                    target.replaceProperty(PROPERTY_URI_PARSER.walk(parser));
                     return true;
                 }
             }
